@@ -39,6 +39,118 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .sponsors-showcase {
+      background: linear-gradient(180deg, #f6f9fc 0%, #fff 48%);
+    }
+
+    .sponsors-showcase .section-header p {
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: #4a5568;
+    }
+
+    .sponsor-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 28px rgba(27, 47, 69, 0.08);
+      padding: 2rem 1.5rem 1.75rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border: 1px solid rgba(0, 87, 133, 0.06);
+    }
+
+    .sponsor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 40px rgba(27, 47, 69, 0.12);
+    }
+
+    .sponsor-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 88px;
+      margin-bottom: 1.25rem;
+    }
+
+    .sponsor-logo-wrap img {
+      max-height: 72px;
+      max-width: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .sponsor-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.65rem;
+    }
+
+    .sponsor-card .sponsor-desc {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #5a6570;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    .sponsor-card .sponsor-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 1.1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-secondary);
+    }
+
+    .sponsor-card .sponsor-link i {
+      font-size: 0.85rem;
+      transition: transform 0.2s ease;
+    }
+
+    .sponsor-card:hover .sponsor-link i {
+      transform: translateX(3px);
+    }
+
+    .sponsors-cta {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(0, 87, 133, 0.12);
+      text-align: center;
+    }
+
+    .sponsors-cta p {
+      color: #5a6570;
+      margin-bottom: 0.75rem;
+    }
+
+    .sponsors-cta .btn-get-started {
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 12px 28px;
+      border-radius: 50px;
+      color: #fff;
+      background: var(--color-secondary);
+      border: none;
+      transition: background 0.3s ease;
+    }
+
+    .sponsors-cta .btn-get-started:hover {
+      background: #00466a;
+      color: #fff;
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: Nova - v1.2.1
   * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
@@ -108,72 +220,59 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- ======= Sponsors Section ======= -->
+    <section id="sponsors-showcase" class="sponsors-showcase">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Thank You To Our Current Sponsors!</h2>
+          <h2>Our sponsors</h2>
+          <p>ESUC supports engineering students at UCLA through events, community, and connections with industry. Our sponsors make that work possible. Thank you for investing in the next generation of engineers.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="sponsor-card">
+              <a href="https://www.northropgrumman.com/" class="sponsor-logo-wrap" target="_blank" rel="noopener noreferrer" aria-label="Northrop Grumman (opens in new tab)">
+                <img src="assets/img/northrop-grumman.png" alt="Northrop Grumman logo">
+              </a>
+              <h3 class="sponsor-name">Northrop Grumman</h3>
+              <p class="sponsor-desc">A global aerospace and defense technology company. ESUC is grateful for their partnership and support of our programs for UCLA engineers.</p>
+              <a href="https://www.northropgrumman.com/" class="sponsor-link" target="_blank" rel="noopener noreferrer">Visit website <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="sponsor-card">
+              <a href="https://sites.disney.com/waltdisneyimagineering/" class="sponsor-logo-wrap" target="_blank" rel="noopener noreferrer" aria-label="Walt Disney Imagineering (opens in new tab)">
+                <img src="assets/img/disney-imagineering.png" alt="Walt Disney Imagineering logo">
+              </a>
+              <h3 class="sponsor-name">Walt Disney Imagineering</h3>
+              <p class="sponsor-desc">The creative and engineering team behind Disney theme parks, resorts, and experiences worldwide. Thank you for supporting ESUC and our student community.</p>
+              <a href="https://sites.disney.com/waltdisneyimagineering/" class="sponsor-link" target="_blank" rel="noopener noreferrer">Visit website <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="sponsor-card">
+              <a href="https://www.rtx.com/raytheon" class="sponsor-logo-wrap" target="_blank" rel="noopener noreferrer" aria-label="Raytheon (opens in new tab)">
+                <img src="assets/img/raytheon.jpg" alt="Raytheon Technologies logo">
+              </a>
+              <h3 class="sponsor-name">Raytheon Technologies</h3>
+              <p class="sponsor-desc">A defense and aerospace business focused on advanced systems for the U.S. military and allies. ESUC appreciates their support of our community.</p>
+              <a href="https://www.rtx.com/raytheon" class="sponsor-link" target="_blank" rel="noopener noreferrer">Visit website <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
 
         </div>
 
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Northrop Grumman is exploring burgeoning research areas and creating revolutionary technology that will not only power the mission but also connect, advance and protect the U.S. and its allies. No matter what the future holds, the greater the problem, the more prepared we are to help solve it.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/ng3.png" class="testimonial-img" alt="">
-                  <h3>Northrop Grumman</h3>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  TSMC's vision is to be the most advanced and largest technology and foundry services provider to fabless companies and IDMs, and in partnership with them, to forge a powerful competitive force in the semiconductor industry.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/tsmc.png" class="testimonial-img" alt="">
-                  <h3>TSMC</h3>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Chevron invests in tomorrow's workforce through partnerships with several organizations to promote education in science, technology, engineering and math. Chevron partners with organizations to expand opportunities for makers to imagine, design and create.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/chevron.png" class="testimonial-img" alt="">
-                  <h3>Chevron</h3>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  Make an impact and partner with us for your next networking event at UCLA. Email us at <a href="mailto:esuc.ucla@gmail.com" target="_blank" rel="noopener">esuc.ucla@gmail.com</a> to get more information about supporting a great program that helps talented engineers!
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/qm.png" class="testimonial-img" alt="">
-                  <h3>This Could Be You!</h3>
-                </div>
-              </div>
-            </div>End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
+        <div class="sponsors-cta" data-aos="fade-up" data-aos-delay="250">
+          <p>Interested in partnering with ESUC?</p>
+          <a href="contact.html" class="btn-get-started d-inline-flex align-items-center gap-2">Contact us <i class="bi bi-envelope"></i></a>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section><!-- End Sponsors Section -->
 
   </main><!-- End #main -->
 
