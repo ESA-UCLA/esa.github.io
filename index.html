@@ -15,7 +15,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ESUC - Home</title>
+  <title>ESA - Home</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -48,6 +48,31 @@
 </head>
 
 <body class="page-index">
+    <!-- POP UP MESSAGE - Rebranding -->
+  <!-- The Popup Element -->
+  <dialog id="rebranding">
+    <!-- Using a form with method="dialog" automatically closes the popup on submit -->
+    <form method="dialog">
+      <div style="display: flex; justify-content: flex-end;">
+        <button onclick="document.getElementById('rebranding').close()"><i class="bi bi-x"></i></button>
+      </div>
+      <h4>ESUC to ESA Rebranding</h4>
+      <p>This website is currently in the works of being put through a major rebranding.
+         Please stay patient as we continue to update everything. As a team, we decided to
+          rebrand from Engineering Society at UCLA to Engineering Student Association at
+           UCLA because we thought the decision fit more appropriately. We thank you
+            for your patience while we are rebranding and appreciate all your support.</p>
+    </form>
+  </dialog>
+
+   <!-- Script to trigger it immediately on load -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const popup = document.getElementById('rebranding');
+            popup.showModal(); // Opens the dialog natively as a modal popup
+        });
+    </script>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -55,8 +80,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="ESUC Logo">
-        <!-- <h1 class="d-flex align-items-center">ESUC</h1> -->
+        <img src="assets/img/logo.png" alt="ESA Logo">
+        <!-- <h1 class="d-flex align-items-center">ESA</h1> -->
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -72,9 +97,9 @@
           <li><a href="sponsors.html">Sponsors</a></li>
           <li class="dropdown"><a href="events.html"><span>Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="http://www.esuc.ucla.edu/bruin-engineers-week/" target="_blank" rel="noopener" class="esuc">Bruin Engineers Week</a></li>
-              <li><a href="https://www.esuc.ucla.edu/winter-orgs/" target="_blank" rel="noopener" class="esuc">W-SOAP</a></li>
-              <li><a href="https://www.esuc.ucla.edu/ewd-2025/" target="_blank" rel="noopener" class="esuc">EWD 2025</a></li>
+              <li><a href="http://www.esuc.ucla.edu/bruin-engineers-week/" target="_blank" rel="noopener" class="esa">Bruin Engineers Week</a></li>
+              <li><a href="https://www.esuc.ucla.edu/winter-orgs/" target="_blank" rel="noopener" class="esa">W-SOAP</a></li>
+              <li><a href="https://www.esuc.ucla.edu/ewd-2025/" target="_blank" rel="noopener" class="esa">EWD 2025</a></li>
               <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
@@ -98,10 +123,10 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-4">
-          <h2 data-aos="fade-up">Engineering Society <br>
+          <h2 data-aos="fade-up">Engineering Student Association <br>
             <i class="bi bi-geo-alt" style="color: #fff;"></i> UCLA</h2>
           <blockquote data-aos="fade-up" data-aos-delay="100">
-            <p>ESUC is the umbrella organization that facilitates communication and events between the engineering student body and the UCLA School of Engineering.</p>
+            <p>ESA is the umbrella organization that facilitates communication and events between the engineering student body and the UCLA School of Engineering.</p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="#recent-posts" class="btn-get-started">Get Started</a>
@@ -125,12 +150,12 @@
         <div class="row gy-5">
 
           <div class="container">
-            <h3 class="post-title">Apply to be an ESUC Intern</h3>
+            <h3 class="post-title">Apply to be an ESA Intern</h3>
             <p>
               We're looking for students to join our team for the upcoming school year! Help facilitate communication between the engineering student body and UCLA School of Engineering. Some of the different departments include web development, finance, corporate, alumni relations, and marketing. Use this opportunity to spread even more opportunties to the engineering community at UCLA!
             </p>
           <p>If you're interested in becoming an intern, please fill out the form below.</p>
-            <a href="https://forms.gle/4PPU8SS9h2As2eKQA" class="btn-get-started" style="display: inline-block; padding: 10px 25px; background: #015785; color: #fff; border-radius: 30px; transition: 0.3s;">Become an Intern</a>
+            <a href="https://forms.gle/NbEosDLK9j5Na8pJA" class="btn-get-started" style="display: inline-block; padding: 10px 25px; background: #015785; color: #fff; border-radius: 30px; transition: 0.3s;">Become an Intern</a>
           </div>
           <br>
 
@@ -145,9 +170,9 @@
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
-            <h3>ESUC Lounge Reservations</h3>
-            <p>Check here for ESUC Lounge availability! If you're representing a student organization, you can make a reservation here:</p>
-            <a class="cta-btn" href="https://calendly.com/esa-ucla-facilities/esa-lounge-reservations">ESUC Lounge Reservations</a>
+            <h3>ESA Lounge Reservations</h3>
+            <p>Check here for ESA Lounge availability! If you're representing a student organization, you can make a reservation here:</p>
+            <a class="cta-btn" href="https://calendly.com/esa-ucla-facilities/esa-lounge-reservations">ESA Lounge Reservations</a>
           </div>
         </div>
 
@@ -167,10 +192,11 @@
       </div> -->
 
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="https://forms.gle/1HVUK9Wc1mYgN6EEA" class="esuc"><i class="bi bi-envelope"></i></a>
-        <a href="https://linktr.ee/esuc" target="_blank" rel="noopener" class="uip-urp"><i class="bi bi-files"></i></a>
-        <a href="https://www.instagram.com/esucla/" target="_blank" rel="noopener" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://github.com/ESUC" target="_blank" rel="noopener" class="linkedin"><i class="bi bi-github"></i></a>
+        <a href="https://forms.gle/1HVUK9Wc1mYgN6EEA" class="esa"><i class="bi bi-envelope"></i></a>
+        <a href="https://linktr.ee/esaucla" target="_blank" rel="noopener" class="uip-urp"><i class="bi bi-tree"></i></a>
+        <a href="https://www.instagram.com/uclaengstudentassociation/" target="_blank" rel="noopener" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/uclaengstudentassociation/" target="_blank" rel="noopener" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/ESA-UCLA" target="_blank" rel="noopener" class="linkedin"><i class="bi bi-github"></i></a>
       </div>
 
     </div>
